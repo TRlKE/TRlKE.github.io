@@ -12,7 +12,7 @@ function newManufacturer(){
         document.getElementById("number").innerHTML = amount - 10 + 'n';
         amount = amount - 10;
         amountPerSecond = amountPerSecond + 1;
-        document.getElementById("numberPerSecond").innerHTML = 'numberPerSecond: ' + amountPerSecond;
+        document.getElementById("numberPerSecond").innerHTML = 'numberPerSecond: ' + amountPerSecond + 'n';
     }
 }
 
