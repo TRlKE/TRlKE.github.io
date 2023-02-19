@@ -47,6 +47,7 @@ setInterval(function populationGrowth() {
         populationRound = Math.round(population);
         document.getElementById("population").innerHTML = 'Population: ' + populationRound;
         idleWorkers = populationRound - working;
+        document.getElementById("idleWorkers").innerHTML = "Idle Workers: " + idleWorkers;
     }
 }, 1000);
 
@@ -58,7 +59,7 @@ setInterval(function date() {
 function hire(worker) {
     if (idleWorkers > 0) {
         idleWorkers = idleWorkers - 1;
-        document.getElementById("idleWorkers").innerHTML = "Idle Workers: " + idleWorkers
+        document.getElementById("idleWorkers").innerHTML = "Idle Workers: " + idleWorkers;
         working++;
         if (worker == 1) {
             lumberjacks++;
@@ -82,7 +83,7 @@ setInterval(function working() {
     wood = wood + woodPerSec;
     stone = stone + stonePerSec;
     houses = houses + housesPerSec;
-    if (wood > 0 && stone > 0) {
+    if (wood > housesPerSec * 10 && stone > housesPerSec * 5) {
         wood = wood - housesPerSec * 10;
         stone = stone - housesPerSec * 5;
         houses = houses + housesPerSec;
