@@ -1,0 +1,37 @@
+
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.inline {
+    display: inline;
+}
+
+.greyed {
+    color: rgba(0, 0, 0, .5);
+}
+
+.sub {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.box {
+    position: relative;
+    right: 400px;
+
+}
+
+#hirebox {
+    background-color: #e8e8e8;
+    padding: 20px;
+    border-style: solid;
+    border-width: thin;
+    float: right;
+    position: relative;
+    bottom: 16px;
+}
+
+.right {
+    float: right;
+}
