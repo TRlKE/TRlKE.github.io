@@ -1,0 +1,119 @@
+
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#toppest {
+    float: left;
+    width: 100%;
+    margin-left: 10px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding: 0px;
+}
+
+#civName {
+    font-size: 400%;
+    color: #222;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#top {
+    float: left;
+    width: 100%;
+    background-color: #222;
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#leftColumn {
+    float: left;
+    width: 275px;
+    height: 400px;
+    background-color: #fff;
+    color: #000;
+    outline: solid;
+    outline-width: 0px;
+    padding: 10px;
+    margin: 0px;
+}
+
+div {
+    display: block;
+    text-shadow: #aaa 0 1px 0;
+}
+
+.greyed {
+    color: #777;
+}
+
+button {
+    border: 1px solid #000;
+    background: -webkit-linear-gradient(#fff, #888);
+    border-radius: 5px;
+    box-shadow: rgb(255, 255, 255 / 40%);
+    text-shadow: #999 0 1px 0;
+}
+
+button:active {
+    background: -webkit-linear-gradient(#444, #fff);
+    border: 1px solid #000;
+    color: #000;
+    text-shadow: #999 0 1px 0;
+}
+
+
+button:hover {
+    border: 1px solid #999;
+}
+
+.hireInput {
+    width: 100px;
+    border: 1px solid #222;
+    border-radius: 2px;
+    border-style: solid;
+}
+
+#amountOfMiner {
+    width: 100px;
+    border: 1px solid #222;
+    border-radius: 2px;
+    border-style: solid;
+}
+
+button:disabled {
+    opacity: 0.6;
+    border: 1px solid #fff;
+}
+
+.check:disabled {
+    opacity: 0.6;
+    border: 1px solid #fff;
+}
+
+#rightColumn {
+    float: left;
+    background-color: #ddd;
+    padding: 10px;
+    margin-left: 10px;
+    width: 300px;
+    height: 400px;
+    border: 1px solid #222;
+    border-style: dashed;
+    border-radius: 4px;
+}
+
+.subTitle {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.small {
+    font-size: small;
+    color: #777;
+}
+
+.hidden {
+    visibility: hidden;
+}
