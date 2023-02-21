@@ -38,8 +38,8 @@ let house = {
 check('idleWorkers');
 check('houseBtn');
 
-//let civName = prompt("What will be the name of your civilisation?")
-//let creater = prompt("Your name?")
+let civName = prompt("What will be the name of your civilisation?")
+let creater = prompt("Your name?")
 document.getElementById("civName").innerHTML = civName
 document.getElementById("creater").innerHTML = creater
 
