@@ -17,7 +17,6 @@
     background-color:rgba(0, 0, 0, 0.5);
     padding: 5px;
     width: 20%;
-    
 }
 
 body {
@@ -34,4 +33,17 @@ button {
 
 .inline {
     display: inline;
+}
+
+#honourableMention {
+    padding: 5px;
+    float: right;
+    border: dashed black 1px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#quote {
+    font-size: 5;
+
+
 }
