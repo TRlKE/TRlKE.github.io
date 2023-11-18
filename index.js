@@ -7,34 +7,31 @@ const squat = document.querySelector('#squat')
 const bodyweight = document.querySelector('#bodyweight')
 const BDScore = document.querySelector('#BDScore')
 const submitBtn = document.querySelector('#submitBtn')
+const errorSubmit = document.querySelector('#errorSubmit')
 
 function BDSonchange() {
     BDScore.innerHTML = ((Number(bench.value) + Number(deadlift.value) + Number(squat.value)) / 3) / Number(bodyweight.value)
 }
 
-firstName.onchange = ()=>{
-    if (!firstName.value) {
-        console.log('not right')
-    }
-}
 bench.onchange = ()=>{BDSonchange()}
 deadlift.onchange = ()=>{BDSonchange()}
 squat.onchange = ()=>{BDSonchange()}
 bodyweight.onchange = ()=>{BDSonchange()}
 
 submitBtn.addEventListener('click', ()=> {
+    errorSubmit.innerHTML = ''
     if (!firstName.value) {
-        console.log('type in a first name')
+        errorSubmit.innerHTML += 'type in a first name <br>'
     } if (!lastName.value) {
-        console.log('type in a last name')
+        errorSubmit.innerHTML += 'type in a last name <br>'
     } if ((isNaN(Number(bench.value))) || !bench.value) {
-        console.log('Bench can only be a number')
+        errorSubmit.innerHTML += 'Bench can only be a number <br>'
     } if ((isNaN(Number(deadlift.value))) || !deadlift.value) {
-        console.log('Deadlift can only be a number')
+        errorSubmit.innerHTML += 'Deadlift can only be a number <br>'
     } if ((isNaN(Number(squat.value))) || !squat.value) {
-        console.log('Squat can only be a number')
+        errorSubmit.innerHTML += 'Squat can only be a number <br>'
     } if ((isNaN(Number(bodyweight.value))) || !bodyweight.value) {
-        console.log('Bodyweight can only be a number')
+        errorSubmit.innerHTML += 'Bodyweight can only be a number <br>'
     } else {
         console.log('everything is correct')
     }
